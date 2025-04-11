@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Quiz expressions</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script language="JavaScript" src="index.js" defer>
+    </script>
+    <link rel="icon" type="image/png" href="icon.png" />
+</head>
+
+<body>
+    <h1 id="titre" onmouseover="bleu_foncé()" onmouseout="bleu_foncé_fin()">Bienvenue dans mon quiz sur les expressions
+    </h1>
+    <h2 id="description" onmouseover="bleu_clair()" onmouseout="bleu_clair_fin()">Vous allez devoir trouver les mots
+        manquants dans les expressions suivantes. Appuyez sur le numéro de la question avec votre clavier pour avoir la
+        solution !</h2>
+
+    <div id="couleur_modif">1/Tomber dans les ...</div>
+    <button type="button" class="orange" id="bouton_orange">oranges</button>
+    <button type="button" class="rouge" name="bon1" id="bouton_rouge" onclick="gagne()">pommes</button>
+    <button type="button" class="vert" id="bouton_vert">pastèques</button><br /><br />
+
+    2/Ne pas chercher ... à quatorze heures<br />
+    <button type="button" name="bon2" onclick="gagne()">midi</button>
+    <button type="button">Mehdi</button>
+    <button type="button">minuit</button><br /><br />
+
+    3/Être sage comme une ...<br />
+    <button type="button">sauterelle</button>
+    <button type="button" name="bon3" onclick="gagne()">image</button>
+    <button type="button">corneille</button><br /><br />
+
+    4/La ... qui fait déborder le vase<br />
+    <button type="button" name="bon4" onclick="gagne()">goutte d'eau</button>
+    <button type="button">pluie</button>
+    <button type="button">goutte</button><br /><br />
+
+    5/Se mettre sur son ...<br />
+    <button type="button">tabouret</button>
+    <button type="button">estrade</button>
+    <button type="button" name="bon5" onclick="gagne()">31</button><br /><br />
+
+    6/Être au bout du ...<br />
+    <button type="button">manteau</button>
+    <button type="button">tapis</button>
+    <button type="button" name="bon6" onclick="gagne()">rouleau</button><br /><br />
+
+    7/Prendre quelque chose au ... de la lettre<br />
+    <button type="button" name="bon7" onclick="gagne()">pied</button>
+    <button type="button">plafond</button>
+    <button type="button">contenu</button><br /><br />
+
+    8/Avoir des ... dans les jambes<br />
+    <button type="button">mouches</button>
+    <button type="button">sauterelles</button>
+    <button type="button" name="bon8" onclick="gagne()">fourmis</button><br /><br />
+
+    9/Être la ... roue du carrosse<br />
+    <button type="button">première</button>
+    <button type="button" name="bon9" onclick="gagne()">cinquième</button>
+    <button type="button">neuvième</button><br /><br /><br /><br />
+
+    <footer class="footer">Tino Devillers en classe de première</footer>
+</body>
+
+</html>
