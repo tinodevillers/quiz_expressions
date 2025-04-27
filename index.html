@@ -4,23 +4,26 @@
 <head>
     <meta charset="utf-8" />
     <title>Quiz expressions</title>
-    <link href="index.css" rel="stylesheet" type="text/css" />
-    <script language="JavaScript" src="index.js" defer>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script language="JavaScript" src="script.js" defer>
     </script>
     <link rel="icon" type="image/png" href="icon.png" />
 </head>
 
 <body>
-    <h1 id="titre" onmouseover="bleu_foncé()" onmouseout="bleu_foncé_fin()">Bienvenue dans mon quiz sur les expressions
+    <h1 id="titre">Bienvenue dans mon quiz sur les expressions
     </h1>
-    <h2 id="description" onmouseover="bleu_clair()" onmouseout="bleu_clair_fin()">Vous allez devoir trouver les mots
-        manquants dans les expressions suivantes. Appuyez sur le numéro de la question avec votre clavier pour avoir la
-        solution !</h2>
+    <h2 id="description">Vous allez devoir trouver les mots manquants dans les expressions suivantes. Appuyez sur le numéro de la question avec votre clavier pour avoir la solution !</h2>
+
+    <div class="compteur">
+        <h3 id="titre-compteur">Nombre de points :</h3>
+        <h3 id="nb">0</h3>
+    </div>
 
     <div id="couleur_modif">1/Tomber dans les ...</div>
-    <button type="button" class="orange" id="bouton_orange">oranges</button>
-    <button type="button" class="rouge" name="bon1" id="bouton_rouge" onclick="gagne()">pommes</button>
-    <button type="button" class="vert" id="bouton_vert">pastèques</button><br /><br />
+    <button type="button" class="orange" id="bouton-orange">oranges</button>
+    <button type="button" class="rouge" name="bon1" id="bouton-rouge" onclick="gagne()">pommes</button>
+    <button type="button" class="vert" id="bouton-vert">pastèques</button><br /><br />
 
     2/Ne pas chercher ... à quatorze heures<br />
     <button type="button" name="bon2" onclick="gagne()">midi</button>
@@ -62,7 +65,7 @@
     <button type="button" name="bon9" onclick="gagne()">cinquième</button>
     <button type="button">neuvième</button><br /><br /><br /><br />
 
-    <footer class="footer">Tino Devillers en classe de première</footer>
+    <footer id="footer">Tino Devillers en classe de première</footer>
 </body>
 
 </html>
